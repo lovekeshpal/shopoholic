@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="rows">
+      <div  class="col-md-6" >
+    <div class="card">
+        <form [formGroup]="loginForm" >
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+            <input formControlName="username" type="text" class="form-control" placeholder="username" aria-label="Username" aria-describedby="basic-addon1">
+    
+        </div>
+        <span *ngIf ="submitted && loginForm.hasError('required','username')" class="text-danger">
+          User name is required
+        </span>
+        <!-- <div *ngIf="username.errors.required">Username Name is required</div>
+                    <div *ngIf="username.errors.minlength">min length should be 6</div> -->
+        <!-- <div *ngIf="submitted && f?.['username']?.errors" class="invalid-feedback">
+          <div *ngIf="loginForm.hasError('required','username')">user Name is required</div>
+      </div> -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+          <input formControlName="password" type="text" class="form-control" placeholder="password" aria-label="Username" aria-describedby="basic-addon1">
+    
+          <!-- <div *ngIf="submitted && f?.['password']?.errors" class="invalid-feedback">
+            <div *ngIf="f?.['password']?.errors?.['required']">password is required</div>
+        </div> -->
+    
+      </div>
+      <span *ngIf ="submitted && loginForm.hasError('required','password')" class="text-danger">
+        password is required
+      </span>
+      
+    
+      <div class="text-center">
+        <button class="btn btn-secondary"  (click)="login()">submit</button>
+    </div>
+    
+    
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    

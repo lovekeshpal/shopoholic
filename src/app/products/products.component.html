@@ -1,0 +1,39 @@
+<!-- <h2>Product List</h2>
+<ul>
+  <li *ngFor="let product of products">
+    <img [src]="product.image" alt="{{ product.title }}" />
+    <h3>{{ product.title }}</h3>
+    <p>Price: ${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+  </li>
+</ul> -->
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchInput" (keyup)="filterProducts()" placeholder="Search products" />
+</div>
+<div class="product-container">
+<div class="product-list">
+  <div *ngFor="let product of filteredProducts" class="p-card">
+    <img [src]="product.image" alt=" ">
+    <p class="title">{{ product.title }}</p>
+    <p>${{ product.price }}</p>
+    <p>{{ product.rating.rate }}</p>
+  </div>
+</div>
+</div>
+
+
+
+<!-- <div class="input-group w-25 mt-5">
+    <input class ="form-control" type="'text" [(ngModel)]="searchInput" (keyup)="filterProducts()">
+    <button class="btn btn-primary" >Search</button>
+</div>
+<div class="product-list">
+     <ng-container *ngFor="let pro of filteredProducts">
+          <div [product]=pro></div>
+     </ng-container>
+</div>
+<div *ngIf="allProducts.length>0 && filterProducts==0">
+  No results found
+</div> -->
+
+  
