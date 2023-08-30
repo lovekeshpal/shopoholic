@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './data.service';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -16,6 +17,7 @@ import { DataService } from './data.service';
     AppComponent,
     LoginComponent,
     ProductsComponent,
+    HomeComponent,
 
   ],
   imports: [
