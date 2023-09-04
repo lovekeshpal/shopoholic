@@ -1,0 +1,18 @@
+ul li a {
+  text-transform: capitalize;
+}
+.product-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+img {
+  object-fit: cover;
+}
