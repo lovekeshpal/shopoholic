@@ -43,4 +43,12 @@ export class CartService {
     }
 
   }
+  removeFromCart(product: Product) {
+    const index = this.cartItems.findIndex(item => item.id === product.id);
+    if (index !== -1) {
+      this.cartItems.splice(index, 1);
+      localStorage.setItem("cartItems", JSON.stringify(this.cartItems));
+      this.cartItemAdded.emit(); 
+    }
+  }
 }

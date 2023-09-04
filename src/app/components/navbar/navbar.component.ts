@@ -17,4 +17,8 @@ export class NavbarComponent implements OnInit{
       this.cartItemCount = this.cartService.getCartItemCount();
     });  
   }
+  
+  updateCartItemCount() {
+    this.cartItemCount = this.cartService.getCartItemCount();
+  }
 }
