@@ -10,6 +10,8 @@ import { PathLocationStrategy } from '@angular/common';
 })
 export class DataService {
   private apiUrl = environment.apiUrl;
+  private apiUrl1 = environment.apiUrl1;
+
 
   constructor(private http: HttpClient) {}
 
@@ -17,5 +19,7 @@ export class DataService {
     // console.log("products are .......",this.apiUrl+pathUrl)
     return this.http.get<Product[]>(this.apiUrl+pathUrl);
   }
-
+  fetchProductsByCategory(category: string): Observable<any> {
+    return this.http.get<any[]>(`${this.apiUrl1}${category}`);
+  }
 }

@@ -11,6 +11,7 @@ import { DataService } from './services/data.service';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CartComponent } from './components/cart/cart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -22,6 +23,7 @@ import { CartComponent } from './components/cart/cart.component';
     HomeComponent,
     NavbarComponent,
     CartComponent,
+    DashboardComponent,
 
   ],
   imports: [

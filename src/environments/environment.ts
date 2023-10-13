@@ -1,4 +1,5 @@
 export const environment = {
     production: false,
-    apiUrl: 'https://fakestoreapi.com/', // Development API URL
+    apiUrl: 'https://fakestoreapi.com/', 
+    apiUrl1:'https://fakestoreapi.com/products/category/',
   };

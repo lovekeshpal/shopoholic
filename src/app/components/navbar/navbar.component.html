@@ -20,7 +20,7 @@
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="#"
+          
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -28,10 +28,11 @@
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">electronics</a></li>
-              <li><a class="dropdown-item" href="#">jewelery</a></li>
-              <li><a class="dropdown-item" href="#">men's clothing</a></li>
-              <li><a class="dropdown-item" href="#">women's clothing</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/products/category/', 'electronics']">electronics</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/products/category/', 'jewelery']">jewelery</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/products/category/', 'men\'s clothing']">men's clothing</a></li>
+
+              <li><a class="dropdown-item" [routerLink]="['/products/category/', 'women\'s clothing']">women's clothing</a></li>
      
             </ul>
           </li>
